@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyCMqw4c2UKbgDe4gNPEH745lXCEEog5QgQ",
+    authDomain: "angular-infinite-scroll-dd4a2.firebaseapp.com",
+    databaseURL: "https://angular-infinite-scroll-dd4a2.firebaseio.com",
+    projectId: "angular-infinite-scroll-dd4a2",
+    storageBucket: "angular-infinite-scroll-dd4a2.appspot.com",
+    messagingSenderId: "717349733690",
+    appId: "1:717349733690:web:2ed6ab4a38322d7ecb7c03",
+    measurementId: "G-3ZNKN4MMC2"
+  }
 };
 
 /*

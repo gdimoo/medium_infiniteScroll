@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-infinite-scroll-dd4a2": {
+      "hosting": {
+        "infinite-scroll": [
+          "angular-infinite-scroll-dd4a2"
+        ]
+      }
+    }
+  }
+}

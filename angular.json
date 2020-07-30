@@ -121,8 +121,13 @@
               "devServerTarget": "infinite-scroll:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "infinite-scroll"
 }

@@ -20,7 +20,7 @@ interface QueryConfig {
 @Injectable({
   providedIn: 'root'
 })
-export class PaginationService {
+export class PaginationService<T> {
 
   /**
    *
@@ -59,7 +59,7 @@ export class PaginationService {
    * @type {Observable<any>}
    * @memberof PaginationService
    */
-  data: Observable<any>;
+  data: Observable<Array<T>>;
   /**
    *
    * ถ้าข้อมูลที่ดึงมายังไม่หมดจะเป็น false ถ้าหมดแล้วจะเป็น true
@@ -136,8 +136,6 @@ export class PaginationService {
    * @memberof PaginationService
    */
   init(path: string, field: string = 'title', opts?: any) {
-    this._data = new BehaviorSubject([]);
-    this._done = new BehaviorSubject(false);
     this.query = {
       path,
       field,

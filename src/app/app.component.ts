@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit{
 
-  constructor(public page: PaginationService){}
+  constructor(public page: PaginationService<Array<object>>){}
 
   ngOnInit() {
     this.page.init('cats', 'name', { reverse: true, prepend: false })
